@@ -1,0 +1,9 @@
+<form [formGroup]="myForm" >
+  <label>input1</label>
+  <input type="text" formControlName="input1"/>
+  <app-child></app-child>
+</form>
+Valid?  {{ myForm.valid }} <br/>
+Value?  {{ myForm.get('input1').value }} <br/>
+Touched?  {{ myForm.touched }} <br/>
+Dirty?  {{ myForm.dirty }} <br/>
